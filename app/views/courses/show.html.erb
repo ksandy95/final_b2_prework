@@ -1,0 +1,5 @@
+<h1><%= @course.name %></h1>
+<ul><% @course.list_by_grade.each do |student| %>
+  <li><%= student.name %>
+  <%= student.grade %></li>
+<% end %>
